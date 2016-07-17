@@ -1,0 +1,13 @@
+<%= form_for(@artist) do |f| %>
+  <% if @artist.errors.any? %>
+    <%= render partial: "shared/errors", locals: { target: @artist } %>
+<%end%>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :image_path %>
+  <%= f.text_field :image_path %>
+
+  <%= f.submit %>
+<% end %>
