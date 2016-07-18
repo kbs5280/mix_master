@@ -52,3 +52,6 @@ group :production do
   gem 'rails_stdout_logging'
   gem 'rails_serve_static_assets'
 end
+
+gem 'omniauth-oauth2'
+gem 'figaro'
